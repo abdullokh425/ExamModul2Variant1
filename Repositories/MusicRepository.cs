@@ -28,18 +28,18 @@ public class MusicRepository : IMusicRepository
         return getMusics;
     }
 
-    // public void UpdateMusic(Music music)
-    // {
-    //     var updateMusic = GetMusicById(music.Id);
-    //     if (updateMusic is null)
-    //     {
-    //         throw new NullReferenceException();
-    //     }
-    //     
-    //     var index = _musics.IndexOf(updateMusic);
-    //     _musics[index] = music;
-    //     SaveData();
-    // }
+    public void UpdateMusic(Music music)
+    {
+        var updateMusic = GetMusicById(music.Id);
+        if (updateMusic is null)
+        {
+            throw new NullReferenceException();
+        }
+        
+        var index = _musics.IndexOf(updateMusic);
+        _musics[index] = music;
+        SaveData();
+    }
 
 
 
