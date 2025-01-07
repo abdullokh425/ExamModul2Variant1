@@ -2,9 +2,8 @@ using ExamModul2.Repositories;
 
 namespace ExamModul2.Services.DTOs;
 
-public class BaseMusicDto
+public class MusicDto
 {
-    public Guid Id { get; set; }
     public string Name { get; set; }
     public double MB { get; set; }
     public string AuthorName { get; set; }
